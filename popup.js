@@ -2,7 +2,7 @@ import { API_KEY } from "./env.js";
 
 // Function to fetch data from the csfloat API, does nothing yet
 async function getData(){
-    const response = await fetch("https://csfloat.com/api/v1/listings", {
+    const response = await fetch("https://csfloat.com/api/v1/listings?market_hash_name=★ Karambit | Doppler (Factory New)", {
         method: "GET",
         headers: {
             "Authorization": `${API_KEY}`
@@ -12,5 +12,4 @@ async function getData(){
     console.log(data);
 }
 
-console.log("Hello from popup.js!");
 getData();
